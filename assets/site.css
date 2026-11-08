@@ -1,0 +1,42 @@
+/* VOENGAMES — sade stüdyo sitesi */
+:root{
+  --navy:#2E3A50; --navy-2:#253045; --cream:#EEF4EE; --surface:#F8FBF6; --ink:#2C3B37; --dim:#56685F;
+  --accent:#EE9D5F; --accent-ink:#3A1F08; --label:#C2672A; --line:#D4E2D9;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.6 Figtree,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--label)}a:hover{color:var(--ink)}
+.wrap{max-width:760px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right))}
+header.top{background:var(--navy);color:#fff}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:14px}
+header.top a.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font:700 15px Figtree,sans-serif;letter-spacing:.16em}
+header.top a.brand img{width:30px;height:30px}
+header.top nav{display:flex;gap:16px;font-size:14px}
+header.top nav a{color:#d9e2f0;text-decoration:none}header.top nav a:hover{color:#fff}
+.hero{background:var(--navy);color:#fff;text-align:center;padding:56px 0 64px}
+.hero img{display:block;margin:0 auto}
+.hero p{margin-top:4px}
+.hero h1{margin:14px 0 6px;font:700 30px Figtree,sans-serif;letter-spacing:.22em}
+.hero p{margin:0;color:#c9d3e3}
+main{padding:40px 0 56px}
+.card{display:flex;gap:20px;align-items:center;background:var(--surface);border-radius:24px;padding:20px;box-shadow:0 8px 24px rgba(44,70,62,.10);text-decoration:none;color:inherit}
+.card img{width:96px;height:96px;border-radius:22px;flex:none}
+.card h2{margin:0 0 2px;font:600 26px Fredoka,Figtree,sans-serif}
+.card .eyebrow{font-size:11px;font-weight:700;letter-spacing:.16em;color:var(--label)}
+.card p{margin:4px 0 0;color:var(--dim)}
+.pill{display:inline-block;margin-top:10px;background:var(--accent);color:var(--accent-ink);font-weight:700;font-size:13px;border-radius:999px;padding:6px 14px}
+.section-title{font:700 12px Figtree,sans-serif;letter-spacing:.16em;color:var(--label);margin:0 0 12px}
+.doc h1{font:600 34px/1.15 Fredoka,Figtree,sans-serif;margin:0 0 6px;text-wrap:balance}
+.doc .meta{color:var(--dim);font-size:14px;margin:0 0 28px}
+.doc h2{font:700 19px Figtree,sans-serif;margin:32px 0 8px}
+.doc p,.doc li{max-width:68ch}
+.doc ul{padding-left:20px}
+.doc .box{background:var(--surface);border-radius:16px;padding:16px 18px;border:1px solid var(--line)}
+.lang{display:flex;gap:8px;margin:0 0 20px;font-size:14px}
+.lang a{text-decoration:none;padding:4px 12px;border-radius:999px;background:var(--surface);color:var(--ink);border:1px solid var(--line)}
+.lang a[aria-current]{background:var(--ink);color:#fff;border-color:var(--ink)}
+footer{border-top:1px solid var(--line);color:var(--dim);font-size:13px;padding:20px 0 32px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:space-between}
+footer a{color:var(--dim)}
+@media (max-width:480px){.card{flex-direction:column;text-align:center}.hero h1{font-size:24px}.doc h1{font-size:28px}}
